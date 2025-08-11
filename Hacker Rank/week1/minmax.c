@@ -1,13 +1,6 @@
 #include<stdio.h>
-int main( ){
-    int arr[5];
-    for (int i=0;i<5;i++){
-        scanf("%d",&arr[i]);
-        
-    }
-    minmaxsum( arr);
-    return 0;
-}
+
+
 void minmaxsum(int arr[]){
     long long total=0;
     int max=arr[0],min=arr[0];
@@ -25,5 +18,14 @@ void minmaxsum(int arr[]){
      long  long  min_sum=total-min;
     printf("%lld %lld",min_sum ,max_sum);
             
-    
+    }
+
+int main( ){
+    int arr[5];
+    for (int i=0;i<5;i++){
+        scanf("%d",&arr[i]);
+        
+    }
+    minmaxsum( arr);
+    return 0;
 }
